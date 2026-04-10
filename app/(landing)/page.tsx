@@ -1,10 +1,29 @@
+import Navbar from "@/app/(landing)/Navbar"
+import Footer from "@/app/(landing)/Footer"
+import Hero from "@/app/(landing)/Hero"
+import Features from "@/app/(landing)/Features"
+import About from "@/app/(landing)/About"
+import Team from "@/app/(landing)/Team"
+import TechStack from "@/app/(landing)/TechStack"
+import Testimonial from "@/app/(landing)/Testimonial"
+import LeadForm from "@/app/(landing)/LeadForm"
+import ContactForm from "@/app/(landing)/ContactForm"
+import ChatButton from "@/components/chat/ChatButton"
 
-export default function Home() {
-  const name = "Tou";
+export default function HomePage() {
   return (
     <>
-      <h1 className="text-4xl text-amber-600 font-bold animate-bounce">Hello, World!</h1>
-      <p>Welcome {name} to my Next.js app.</p>
+        <Navbar />
+        <Hero />
+        <Features />
+        <About />
+        <Team />
+        <TechStack />
+        <Testimonial />
+        <LeadForm />
+        <ContactForm />
+        <Footer />
+        <ChatButton />
     </>
-  );
+  )
 }
